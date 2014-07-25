@@ -188,9 +188,9 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -331,9 +331,9 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -1824,9 +1824,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -1894,9 +1894,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2138,9 +2138,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2306,9 +2306,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2711,12 +2711,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-cmf/SuluAdminBundle.git",
-                "reference": "de1815ba1cadf996a13b976ccd8aa08e728098b9"
+                "reference": "3a1accc112c080faca9956a8ece62bfe26a76cec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-cmf/SuluAdminBundle/zipball/de1815ba1cadf996a13b976ccd8aa08e728098b9",
-                "reference": "de1815ba1cadf996a13b976ccd8aa08e728098b9",
+                "url": "https://api.github.com/repos/sulu-cmf/SuluAdminBundle/zipball/3a1accc112c080faca9956a8ece62bfe26a76cec",
+                "reference": "3a1accc112c080faca9956a8ece62bfe26a76cec",
                 "shasum": ""
             },
             "require": {
@@ -2751,7 +2751,7 @@
                 "cmf",
                 "symfony"
             ],
-            "time": "2014-07-23 16:29:58"
+            "time": "2014-07-25 11:57:46"
         },
         {
             "name": "sulu/category-bundle",
@@ -2817,12 +2817,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-cmf/SuluContactBundle.git",
-                "reference": "a1f612db59a2356d2b09ba25fb1ea05c890a28e4"
+                "reference": "4bc2f8a5ad468647ebe367fff77004bf4a9682b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-cmf/SuluContactBundle/zipball/a1f612db59a2356d2b09ba25fb1ea05c890a28e4",
-                "reference": "a1f612db59a2356d2b09ba25fb1ea05c890a28e4",
+                "url": "https://api.github.com/repos/sulu-cmf/SuluContactBundle/zipball/4bc2f8a5ad468647ebe367fff77004bf4a9682b4",
+                "reference": "4bc2f8a5ad468647ebe367fff77004bf4a9682b4",
                 "shasum": ""
             },
             "require": {
@@ -2867,7 +2867,7 @@
                 "contact",
                 "crm"
             ],
-            "time": "2014-07-23 16:21:46"
+            "time": "2014-07-24 15:11:24"
         },
         {
             "name": "sulu/content-bundle",
@@ -3005,12 +3005,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-cmf/SuluSecurityBundle.git",
-                "reference": "7da469c150d1700c0f39328e1d6a955bc922ab85"
+                "reference": "264132b942248b4c4920431b643814db648c286c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-cmf/SuluSecurityBundle/zipball/7da469c150d1700c0f39328e1d6a955bc922ab85",
-                "reference": "7da469c150d1700c0f39328e1d6a955bc922ab85",
+                "url": "https://api.github.com/repos/sulu-cmf/SuluSecurityBundle/zipball/264132b942248b4c4920431b643814db648c286c",
+                "reference": "264132b942248b4c4920431b643814db648c286c",
                 "shasum": ""
             },
             "require": {
@@ -3056,7 +3056,7 @@
                 "security",
                 "sulu"
             ],
-            "time": "2014-07-23 16:24:27"
+            "time": "2014-07-24 14:43:20"
         },
         {
             "name": "sulu/sulu",
@@ -3064,12 +3064,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-cmf/sulu.git",
-                "reference": "8c8b8b989fd7cce21a800ab2bd698e1180fe6e14"
+                "reference": "b33114f37acda2e6a11533238b5688cb0a47d86f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-cmf/sulu/zipball/8c8b8b989fd7cce21a800ab2bd698e1180fe6e14",
-                "reference": "8c8b8b989fd7cce21a800ab2bd698e1180fe6e14",
+                "url": "https://api.github.com/repos/sulu-cmf/sulu/zipball/b33114f37acda2e6a11533238b5688cb0a47d86f",
+                "reference": "b33114f37acda2e6a11533238b5688cb0a47d86f",
                 "shasum": ""
             },
             "require": {
@@ -3111,7 +3111,7 @@
                 "core",
                 "sulu"
             ],
-            "time": "2014-07-23 16:27:17"
+            "time": "2014-07-24 13:27:55"
         },
         {
             "name": "sulu/tag-bundle",
@@ -4223,16 +4223,16 @@
         },
         {
             "name": "brianium/paratest",
-            "version": "0.7.1",
+            "version": "0.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brianium/paratest.git",
-                "reference": "602f6a387b9b1439704936e76d5e772a5671e48e"
+                "reference": "e7e9494022190a03aa37ae7e5a2946b17c31686c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brianium/paratest/zipball/602f6a387b9b1439704936e76d5e772a5671e48e",
-                "reference": "602f6a387b9b1439704936e76d5e772a5671e48e",
+                "url": "https://api.github.com/repos/brianium/paratest/zipball/e7e9494022190a03aa37ae7e5a2946b17c31686c",
+                "reference": "e7e9494022190a03aa37ae7e5a2946b17c31686c",
                 "shasum": ""
             },
             "require": {
@@ -4265,7 +4265,7 @@
             ],
             "authors": [
                 {
-                    "name": "Brian",
+                    "name": "Brian Scaturro",
                     "email": "scaturrob@gmail.com",
                     "homepage": "http://brianscaturro.com",
                     "role": "Lead"
@@ -4279,7 +4279,7 @@
                 "phpunit",
                 "testing"
             ],
-            "time": "2014-04-30 14:57:59"
+            "time": "2014-07-22 23:58:29"
         },
         {
             "name": "jackalope/jackalope-doctrine-dbal",
