@@ -1,10 +1,9 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
-        "This file is @generated automatically"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1ec55b1fb3be4d2c831ff0414fd9929f",
+    "hash": "5d7b2fb1f411bfdc4c9ecf192011bd96",
     "packages": [
         {
             "name": "cboden/ratchet",
@@ -2999,6 +2998,64 @@
             "time": "2014-07-23 16:25:30"
         },
         {
+            "name": "sulu/product-bundle",
+            "version": "dev-develop",
+            "target-dir": "Sulu/Bundle/ProductBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sulu-cmf/SuluProductBundle.git",
+                "reference": "15077865f5aa103c17aa50484950a661ecb37b47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sulu-cmf/SuluProductBundle/zipball/15077865f5aa103c17aa50484950a661ecb37b47",
+                "reference": "15077865f5aa103c17aa50484950a661ecb37b47",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": ">=2.2.3,<2.4-dev",
+                "friendsofsymfony/http-cache": "@dev",
+                "friendsofsymfony/rest-bundle": "@dev",
+                "jms/serializer-bundle": "@dev",
+                "php": ">=5.4",
+                "sulu/admin-bundle": "dev-develop",
+                "sulu/contact-bundle": "dev-develop",
+                "sulu/security-bundle": "dev-develop",
+                "sulu/sulu": "dev-develop",
+                "sulu/tag-bundle": "@dev"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "1.2.*",
+                "phpunit/phpunit": "3.7.*",
+                "sensio/framework-extra-bundle": "~3.0",
+                "sulu/test-bundle": "dev-develop",
+                "symfony/monolog-bundle": "2.4.*",
+                "symfony/symfony": "2.5.*"
+            },
+            "type": "sulu-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Sulu\\Bundle\\ProductBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sulu Community",
+                    "homepage": "https://github.com/massiveart/SuluProductBundle/contributors"
+                }
+            ],
+            "description": "The Sulu Bundle for managing products",
+            "keywords": [
+                "product",
+                "sulu"
+            ],
+            "time": "2014-06-17 06:50:03"
+        },
+        {
             "name": "sulu/security-bundle",
             "version": "dev-develop",
             "target-dir": "Sulu/Bundle/SecurityBundle",
@@ -4955,9 +5012,7 @@
             "time": "2014-07-23 16:26:50"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "sulu/sulu": 20,
@@ -4970,6 +5025,7 @@
         "sulu/tag-bundle": 20,
         "sulu/category-bundle": 20,
         "sulu/translate-bundle": 20,
+        "sulu/product-bundle": 20,
         "jms/serializer-bundle": 20,
         "stof/doctrine-extensions-bundle": 20,
         "doctrine/doctrine-fixtures-bundle": 20,
@@ -4983,7 +5039,5 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }

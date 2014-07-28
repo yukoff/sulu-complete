@@ -10,7 +10,8 @@ cmf_routing:
     chain:
         routers_by_id:
             router.default: 100
-            cmf_routing.dynamic_router: 20
+            sulu_product.product_router: 50
+            cmf_routing.dynamic_router: 25
     dynamic:
         enabled: true
         route_provider_service_id: sulu_website.provider.portal
