@@ -14,4 +14,4 @@ cmf_routing:
             cmf_routing.dynamic_router: 25
     dynamic:
         enabled: true
-        route_provider_service_id: sulu_website.provider.portal
+        route_provider_service_id: sulu_website.provider.content
