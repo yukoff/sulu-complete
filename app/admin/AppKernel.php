@@ -29,13 +29,14 @@ class AppKernel extends Kernel
             new Sulu\Bundle\CoreBundle\SuluCoreBundle(),
             new Sulu\Bundle\AdminBundle\SuluAdminBundle(),
             new Sulu\Bundle\ContactBundle\SuluContactBundle(),
+            new Sulu\Bundle\MediaBundle\SuluMediaBundle(),
             new Sulu\Bundle\SecurityBundle\SuluSecurityBundle(),
             new Sulu\Bundle\TagBundle\SuluTagBundle(),
             new Sulu\Bundle\ContentBundle\SuluContentBundle(),
-            new Sulu\Bundle\MediaBundle\SuluMediaBundle(),
             new Sulu\Bundle\CategoryBundle\SuluCategoryBundle(),
             new Sulu\Bundle\TranslateBundle\SuluTranslateBundle(),
             new Sulu\Bundle\ProductBundle\SuluProductBundle(),
+            new Sulu\Bundle\LocationBundle\SuluLocationBundle(),
 
             // enable cmf bundles
             new Doctrine\Bundle\PHPCRBundle\DoctrinePHPCRBundle(),

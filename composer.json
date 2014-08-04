@@ -34,6 +34,7 @@
         "sulu/category-bundle": "dev-develop",
         "sulu/translate-bundle": "dev-develop",
         "sulu/product-bundle": "dev-develop",
+        "sulu/location-bundle": "dev-develop",
 
         "jms/serializer-bundle": "@dev",
         "stof/doctrine-extensions-bundle": "@dev",
@@ -74,7 +75,6 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sulu\\Component\\Composer\\SuluScriptHandler::installApp",
-            "Sulu\\Bundle\\TranslateBundle\\Composer\\SuluScriptHandler::installTranslations",
             "Sulu\\Bundle\\MediaBundle\\Composer\\MediaScriptHandler::initBundle"
         ]
     },
