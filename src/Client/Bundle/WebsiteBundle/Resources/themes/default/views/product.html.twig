@@ -1,0 +1,7 @@
+{% extends "ClientWebsiteBundle:views:master.html.twig" %}
+
+{% block title %} {{ product.name }} {% endblock %}
+
+{% block content %}
+    {% autoescape false %}{{ product.longDescription }}{% endautoescape %}
+{% endblock %}
