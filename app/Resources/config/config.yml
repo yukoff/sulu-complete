@@ -109,3 +109,6 @@ sulu_core:
                     internal: true
     http_cache:
         ~
+
+sulu_product:
+    template: ClientWebsiteBundle:views:product.html.twig
