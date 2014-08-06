@@ -3867,12 +3867,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-cmf/sulu.git",
-                "reference": "0e70b8e13a343fdaa9049b1d3ff3d060c11455cb"
+                "reference": "daf48b4221d664ea85e349e579a8288852e50f8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-cmf/sulu/zipball/0e70b8e13a343fdaa9049b1d3ff3d060c11455cb",
-                "reference": "0e70b8e13a343fdaa9049b1d3ff3d060c11455cb",
+                "url": "https://api.github.com/repos/sulu-cmf/sulu/zipball/daf48b4221d664ea85e349e579a8288852e50f8b",
+                "reference": "daf48b4221d664ea85e349e579a8288852e50f8b",
                 "shasum": ""
             },
             "require": {
@@ -3914,7 +3914,7 @@
                 "core",
                 "sulu"
             ],
-            "time": "2014-08-01 11:53:40"
+            "time": "2014-08-06 10:55:42"
         },
         {
             "name": "sulu/tag-bundle",
@@ -4036,12 +4036,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-cmf/SuluWebsiteBundle.git",
-                "reference": "528989729b1b9f0c537466915420df99406f6cbf"
+                "reference": "42ef0cb0d816f8054bbb24dd0b039c0bcd250be8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-cmf/SuluWebsiteBundle/zipball/528989729b1b9f0c537466915420df99406f6cbf",
-                "reference": "528989729b1b9f0c537466915420df99406f6cbf",
+                "url": "https://api.github.com/repos/sulu-cmf/SuluWebsiteBundle/zipball/42ef0cb0d816f8054bbb24dd0b039c0bcd250be8",
+                "reference": "42ef0cb0d816f8054bbb24dd0b039c0bcd250be8",
                 "shasum": ""
             },
             "require": {
@@ -4081,7 +4081,7 @@
                 "sulu",
                 "website"
             ],
-            "time": "2014-08-01 11:58:52"
+            "time": "2014-08-06 10:51:56"
         },
         {
             "name": "swiftmailer/swiftmailer",
