@@ -77,3 +77,4 @@ sulu_product_api:
 sulu_location:
     resource: "@SuluLocationBundle/Resources/config/routing.yml"
     prefix: /admin/location
+
