@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e18e66ea6b6cf6dcf8054b87dc225c5c",
+    "hash": "a0309f3cbadd042681a010e51c9ea554",
     "packages": [
         {
             "name": "cboden/ratchet",
@@ -1056,12 +1056,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "dcd601879b2e03c9615dfc2455d5bd70f59f9fb6"
+                "reference": "22d6b2a401b66fb4f18840efc27826de441d902c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/dcd601879b2e03c9615dfc2455d5bd70f59f9fb6",
-                "reference": "dcd601879b2e03c9615dfc2455d5bd70f59f9fb6",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/22d6b2a401b66fb4f18840efc27826de441d902c",
+                "reference": "22d6b2a401b66fb4f18840efc27826de441d902c",
                 "shasum": ""
             },
             "require": {
@@ -1125,7 +1125,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-08-07 11:22:31"
+            "time": "2014-08-11 13:50:52"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -3387,12 +3387,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-cmf/SuluAdminBundle.git",
-                "reference": "f6c67a822ca0c11747747065b93f7a843c2e6193"
+                "reference": "b6f6d9e913d6cdb4fa0310b9242b885443e3c782"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-cmf/SuluAdminBundle/zipball/f6c67a822ca0c11747747065b93f7a843c2e6193",
-                "reference": "f6c67a822ca0c11747747065b93f7a843c2e6193",
+                "url": "https://api.github.com/repos/sulu-cmf/SuluAdminBundle/zipball/b6f6d9e913d6cdb4fa0310b9242b885443e3c782",
+                "reference": "b6f6d9e913d6cdb4fa0310b9242b885443e3c782",
                 "shasum": ""
             },
             "require": {
@@ -3427,7 +3427,7 @@
                 "cmf",
                 "symfony"
             ],
-            "time": "2014-08-08 14:03:32"
+            "time": "2014-08-11 13:07:53"
         },
         {
             "name": "sulu/category-bundle",
@@ -3875,12 +3875,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-cmf/sulu.git",
-                "reference": "6c48c358760b3f6ca8243944edaed73e3b31f25c"
+                "reference": "14f6a38cc36574a318f06d201cea22341e6d53ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-cmf/sulu/zipball/6c48c358760b3f6ca8243944edaed73e3b31f25c",
-                "reference": "6c48c358760b3f6ca8243944edaed73e3b31f25c",
+                "url": "https://api.github.com/repos/sulu-cmf/sulu/zipball/14f6a38cc36574a318f06d201cea22341e6d53ef",
+                "reference": "14f6a38cc36574a318f06d201cea22341e6d53ef",
                 "shasum": ""
             },
             "require": {
@@ -3922,7 +3922,7 @@
                 "core",
                 "sulu"
             ],
-            "time": "2014-08-08 14:05:32"
+            "time": "2014-08-11 11:54:59"
         },
         {
             "name": "sulu/tag-bundle",
