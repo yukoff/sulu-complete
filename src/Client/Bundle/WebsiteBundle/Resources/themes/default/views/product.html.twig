@@ -1,0 +1,10 @@
+{% extends "ClientWebsiteBundle:views:master.html.twig" %}
+
+{% block title %} {{ product.name }} {% endblock %}
+
+{% block content %}
+    <div id="content">
+        <h1 class="page-header">{{ product.name }}</h1>
+        {% autoescape false %}{{ product.longDescription }}{% endautoescape %}
+    </div>
+{% endblock %}

@@ -24,7 +24,7 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new Liip\ThemeBundle\LiipThemeBundle(),
 
-            // ebables sulu bundles
+            // enables sulu bundles
             new Sulu\Bundle\CoreBundle\SuluCoreBundle(),
             new Sulu\Bundle\ContactBundle\SuluContactBundle(),
             new Sulu\Bundle\WebsiteBundle\SuluWebsiteBundle(),
@@ -34,7 +34,9 @@ class AppKernel extends Kernel
             new Sulu\Bundle\SecurityBundle\SuluSecurityBundle(),
             new Sulu\Bundle\MediaBundle\SuluMediaBundle(),
             new Sulu\Bundle\TranslateBundle\SuluTranslateBundle(),
+            new Sulu\Bundle\ProductBundle\SuluProductBundle(),
             new Client\Bundle\WebsiteBundle\ClientWebsiteBundle(),
+            new Sulu\Bundle\LocationBundle\SuluLocationBundle(),
 
             // enable cmf bundles
             new Doctrine\Bundle\PHPCRBundle\DoctrinePHPCRBundle(),
@@ -47,6 +49,9 @@ class AppKernel extends Kernel
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
             $bundles[] = new Sulu\Bundle\GeneratorBundle\SuluGeneratorBundle();
+
+            // Debug
+            $bundles[] = new RaulFraile\Bundle\LadybugBundle\RaulFraileLadybugBundle();
         }
 
         return $bundles;
