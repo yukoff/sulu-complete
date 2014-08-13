@@ -187,9 +187,9 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -330,9 +330,9 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -1056,12 +1056,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "b7f01feb500808aff5dc41a7aeda1e688c0791b1"
+                "reference": "4df33da7dfdad1d6721ef56a770bb9d691c44fd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/b7f01feb500808aff5dc41a7aeda1e688c0791b1",
-                "reference": "b7f01feb500808aff5dc41a7aeda1e688c0791b1",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/4df33da7dfdad1d6721ef56a770bb9d691c44fd5",
+                "reference": "4df33da7dfdad1d6721ef56a770bb9d691c44fd5",
                 "shasum": ""
             },
             "require": {
@@ -1125,7 +1125,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-08-12 16:20:35"
+            "time": "2014-08-13 05:52:08"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -1975,9 +1975,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2381,9 +2381,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -2549,9 +2549,9 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -3554,12 +3554,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-cmf/SuluContentBundle.git",
-                "reference": "7f25cd0960be922cbb7bf0cea92650719ffc8850"
+                "reference": "75e8b7ece814326371e8c23d34e20b7b63f54dd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-cmf/SuluContentBundle/zipball/7f25cd0960be922cbb7bf0cea92650719ffc8850",
-                "reference": "7f25cd0960be922cbb7bf0cea92650719ffc8850",
+                "url": "https://api.github.com/repos/sulu-cmf/SuluContentBundle/zipball/75e8b7ece814326371e8c23d34e20b7b63f54dd3",
+                "reference": "75e8b7ece814326371e8c23d34e20b7b63f54dd3",
                 "shasum": ""
             },
             "require": {
@@ -3614,7 +3614,7 @@
                 "cmf",
                 "content"
             ],
-            "time": "2014-08-12 16:23:53"
+            "time": "2014-08-13 06:48:22"
         },
         {
             "name": "sulu/location-bundle",
@@ -3875,12 +3875,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-cmf/sulu.git",
-                "reference": "8d684279a613288809a908314a09c3d366474cbf"
+                "reference": "1ec574b8897f0c8fbd4705a6bd240f7f0651c7fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-cmf/sulu/zipball/8d684279a613288809a908314a09c3d366474cbf",
-                "reference": "8d684279a613288809a908314a09c3d366474cbf",
+                "url": "https://api.github.com/repos/sulu-cmf/sulu/zipball/1ec574b8897f0c8fbd4705a6bd240f7f0651c7fb",
+                "reference": "1ec574b8897f0c8fbd4705a6bd240f7f0651c7fb",
                 "shasum": ""
             },
             "require": {
@@ -3922,7 +3922,7 @@
                 "core",
                 "sulu"
             ],
-            "time": "2014-08-12 16:05:55"
+            "time": "2014-08-12 16:47:14"
         },
         {
             "name": "sulu/tag-bundle",
@@ -5079,7 +5079,7 @@
                     "name": "Brian Scaturro",
                     "email": "scaturrob@gmail.com",
                     "homepage": "http://brianscaturro.com",
-                    "role": "lead"
+                    "role": "Lead"
                 }
             ],
             "description": "Parallel testing for PHP",
@@ -5737,7 +5737,9 @@
             "time": "2014-08-12 16:05:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "sulu/sulu": 20,
@@ -5766,5 +5768,7 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
