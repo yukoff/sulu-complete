@@ -4,9 +4,9 @@
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
 
-    <key>overview</key>
+    <key>sitemap</key>
 
-    <view>ClientWebsiteBundle:templates:overview</view>
+    <view>ClientWebsiteBundle:templates:sitemap.html.twig</view>
     <controller>SuluWebsiteBundle:Default:index</controller>
     <cacheLifetime>2400</cacheLifetime>
 
@@ -28,24 +28,6 @@
             </meta>
 
             <tag name="sulu.rlp"/>
-        </property>
-
-        <property name="smartcontent" type="smart_content">
-            <meta>
-                <title lang="de">Smart-Content</title>
-                <title lang="en">Smart-Content</title>
-            </meta>
-
-            <params>
-                <param name="max_per_page" value="5" />
-            </params>
-        </property>
-
-        <property name="article" type="text_editor">
-            <meta>
-                <title lang="de">Artikel</title>
-                <title lang="en">Article</title>
-            </meta>
         </property>
     </properties>
 </template>
