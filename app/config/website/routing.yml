@@ -9,6 +9,10 @@ sulu_product:
     resource: "@SuluProductBundle/Resources/config/routing_website.yml"
     type: portal
 
+client_website:
+    type: portal
+    resource: "@ClientWebsiteBundle/Resources/config/routing.yml"
+
 sulu_website:
     resource: "@SuluWebsiteBundle/Resources/config/routing_website.yml"
 
