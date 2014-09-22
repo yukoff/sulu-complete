@@ -36,6 +36,10 @@
         "sulu/product-bundle": "dev-develop",
         "sulu/location-bundle": "dev-develop",
         "sulu/search-bundle": "dev-develop",
+        "sulu/sales-core-bundle": "dev-develop",
+        "sulu/sales-order-bundle": "dev-develop",
+        "sulu/sales-shipping-bundle": "dev-develop",
+        "sulu/sales-invoice-bundle": "dev-develop",
 
         "nelmio/alice": "~1.7",
         "doctrine/data-fixtures": "1.0.*",
