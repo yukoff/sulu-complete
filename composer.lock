@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d9b930518ece411e59c4f2c4f5e617c5",
+    "hash": "a919f998a67ab99ad734bfc206137820",
     "packages": [
         {
             "name": "cboden/ratchet",
@@ -1140,9 +1140,7 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": [
-
-                ]
+                "branch-alias": []
             },
             "autoload": {
                 "psr-0": {
@@ -3996,6 +3994,277 @@
             "time": "2014-09-19 14:42:38"
         },
         {
+            "name": "sulu/sales-core-bundle",
+            "version": "dev-develop",
+            "target-dir": "Sulu/Bundle/Sales/CoreBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sulu-cmf/SuluSalesCoreBundle.git",
+                "reference": "be9994cb07cc0fae5e36de7a336896419449ce72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sulu-cmf/SuluSalesCoreBundle/zipball/be9994cb07cc0fae5e36de7a336896419449ce72",
+                "reference": "be9994cb07cc0fae5e36de7a336896419449ce72",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": ">=2.2.3,<2.4-dev",
+                "friendsofsymfony/http-cache": "@dev",
+                "friendsofsymfony/rest-bundle": "dev-master",
+                "jms/serializer-bundle": "@dev",
+                "php": ">=5.4",
+                "stof/doctrine-extensions-bundle": "1.1.*@dev",
+                "sulu/admin-bundle": "dev-develop",
+                "sulu/contact-bundle": "dev-develop",
+                "sulu/product-bundle": "dev-develop",
+                "sulu/security-bundle": "dev-develop",
+                "sulu/sulu": "dev-develop",
+                "willdurand/hateoas-bundle": "0.3.*"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "1.2.*",
+                "phpunit/phpunit": "3.7.*",
+                "sensio/framework-extra-bundle": "~3.0",
+                "sulu/category-bundle": "dev-develop",
+                "sulu/media-bundle": "dev-develop",
+                "sulu/tag-bundle": "dev-develop",
+                "sulu/test-bundle": "dev-develop",
+                "sulu/website-bundle": "dev-develop",
+                "symfony/monolog-bundle": "2.4.*",
+                "symfony/symfony": "2.5.*"
+            },
+            "type": "sulu-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Sulu\\Bundle\\Sales\\CoreBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sulu Community",
+                    "homepage": "https://github.com/sulu-cmf/SuluSalesCoreBundle/contributors"
+                }
+            ],
+            "description": "Core Bundle of Sulu Sales",
+            "keywords": [
+                "items",
+                "sales"
+            ],
+            "time": "2014-09-22 07:12:51"
+        },
+        {
+            "name": "sulu/sales-invoice-bundle",
+            "version": "dev-develop",
+            "target-dir": "Sulu/Bundle/Sales/InvoiceBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sulu-cmf/SuluSalesInvoiceBundle.git",
+                "reference": "adbf240c90c71e5c08db7995c639609476e593c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sulu-cmf/SuluSalesInvoiceBundle/zipball/adbf240c90c71e5c08db7995c639609476e593c9",
+                "reference": "adbf240c90c71e5c08db7995c639609476e593c9",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": ">=2.2.3,<2.4-dev",
+                "friendsofsymfony/http-cache": "@dev",
+                "friendsofsymfony/rest-bundle": "dev-master",
+                "jms/serializer-bundle": "@dev",
+                "php": ">=5.4",
+                "stof/doctrine-extensions-bundle": "1.1.*@dev",
+                "sulu/admin-bundle": "dev-develop",
+                "sulu/contact-bundle": "dev-develop",
+                "sulu/product-bundle": "dev-develop",
+                "sulu/sales-core-bundle": "dev-develop",
+                "sulu/sales-order-bundle": "dev-develop",
+                "sulu/sales-shipping-bundle": "dev-develop",
+                "sulu/security-bundle": "dev-develop",
+                "sulu/sulu": "dev-develop",
+                "willdurand/hateoas-bundle": "0.3.*"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "1.2.*",
+                "liip/theme-bundle": "1.0.*@dev",
+                "phpunit/phpunit": "3.7.*",
+                "sensio/framework-extra-bundle": "~3.0",
+                "sulu/category-bundle": "dev-develop",
+                "sulu/media-bundle": "dev-develop",
+                "sulu/tag-bundle": "dev-develop",
+                "sulu/test-bundle": "dev-develop",
+                "sulu/website-bundle": "dev-develop",
+                "symfony-cmf/routing": "1.2.*@dev",
+                "symfony-cmf/routing-bundle": "1.2.*@dev",
+                "symfony/monolog-bundle": "2.4.*",
+                "symfony/symfony": "2.5.*"
+            },
+            "type": "sulu-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Sulu\\Bundle\\Sales\\InvoiceBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sulu Community",
+                    "homepage": "https://github.com/sulu-cmf/SuluSalesInvoiceBundle/contributors"
+                }
+            ],
+            "description": "Invoice Bundle of Sulu Sales",
+            "keywords": [
+                "invoice",
+                "sales"
+            ],
+            "time": "2014-09-11 09:06:11"
+        },
+        {
+            "name": "sulu/sales-order-bundle",
+            "version": "dev-develop",
+            "target-dir": "Sulu/Bundle/Sales/OrderBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sulu-cmf/SuluSalesOrderBundle.git",
+                "reference": "d756d8e7d71de5242b56d8fba5142a81da36162d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sulu-cmf/SuluSalesOrderBundle/zipball/d756d8e7d71de5242b56d8fba5142a81da36162d",
+                "reference": "d756d8e7d71de5242b56d8fba5142a81da36162d",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": ">=2.2.3,<2.4-dev",
+                "friendsofsymfony/http-cache": "@dev",
+                "friendsofsymfony/rest-bundle": "dev-master",
+                "jms/serializer-bundle": "@dev",
+                "php": ">=5.4",
+                "stof/doctrine-extensions-bundle": "1.1.*@dev",
+                "sulu/admin-bundle": "dev-develop",
+                "sulu/contact-bundle": "dev-develop",
+                "sulu/product-bundle": "dev-develop",
+                "sulu/sales-core-bundle": "dev-develop",
+                "sulu/security-bundle": "dev-develop",
+                "sulu/sulu": "dev-develop",
+                "willdurand/hateoas-bundle": "0.3.*"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "1.2.*",
+                "liip/theme-bundle": "1.0.*@dev",
+                "phpunit/phpunit": "3.7.*",
+                "sensio/framework-extra-bundle": "~3.0",
+                "sulu/category-bundle": "dev-develop",
+                "sulu/media-bundle": "dev-develop",
+                "sulu/tag-bundle": "dev-develop",
+                "sulu/test-bundle": "dev-develop",
+                "sulu/website-bundle": "dev-develop",
+                "symfony-cmf/routing": "1.2.*@dev",
+                "symfony-cmf/routing-bundle": "1.2.*@dev",
+                "symfony/monolog-bundle": "2.4.*",
+                "symfony/symfony": "2.5.*"
+            },
+            "type": "sulu-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Sulu\\Bundle\\Sales\\OrderBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sulu Community",
+                    "homepage": "https://github.com/sulu-cmf/SuluSalesOrderBundle/contributors"
+                }
+            ],
+            "description": "Order Bundle of Sulu Sales",
+            "keywords": [
+                "order",
+                "sales"
+            ],
+            "time": "2014-09-16 15:01:11"
+        },
+        {
+            "name": "sulu/sales-shipping-bundle",
+            "version": "dev-develop",
+            "target-dir": "Sulu/Bundle/Sales/ShippingBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sulu-cmf/SuluSalesShippingBundle.git",
+                "reference": "240620457a3bae91e82fa2d591ba8808ed7d365c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sulu-cmf/SuluSalesShippingBundle/zipball/240620457a3bae91e82fa2d591ba8808ed7d365c",
+                "reference": "240620457a3bae91e82fa2d591ba8808ed7d365c",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": ">=2.2.3,<2.4-dev",
+                "friendsofsymfony/http-cache": "@dev",
+                "friendsofsymfony/rest-bundle": "dev-master",
+                "jms/serializer-bundle": "@dev",
+                "php": ">=5.4",
+                "stof/doctrine-extensions-bundle": "1.1.*@dev",
+                "sulu/admin-bundle": "dev-develop",
+                "sulu/contact-bundle": "dev-develop",
+                "sulu/product-bundle": "dev-develop",
+                "sulu/sales-core-bundle": "dev-develop",
+                "sulu/sales-order-bundle": "dev-develop",
+                "sulu/security-bundle": "dev-develop",
+                "sulu/sulu": "dev-develop",
+                "willdurand/hateoas-bundle": "0.3.*"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "1.2.*",
+                "liip/theme-bundle": "1.0.*@dev",
+                "phpunit/phpunit": "3.7.*",
+                "sensio/framework-extra-bundle": "~3.0",
+                "sulu/category-bundle": "dev-develop",
+                "sulu/media-bundle": "dev-develop",
+                "sulu/tag-bundle": "dev-develop",
+                "sulu/test-bundle": "dev-develop",
+                "sulu/website-bundle": "dev-develop",
+                "symfony-cmf/routing": "1.2.*@dev",
+                "symfony-cmf/routing-bundle": "1.2.*@dev",
+                "symfony/monolog-bundle": "2.4.*",
+                "symfony/symfony": "2.5.*"
+            },
+            "type": "sulu-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Sulu\\Bundle\\Sales\\ShippingBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sulu Community",
+                    "homepage": "https://github.com/sulu-cmf/SuluSalesShippingBundle/contributors"
+                }
+            ],
+            "description": "Shipping Bundle of Sulu Sales",
+            "keywords": [
+                "sales",
+                "shipping"
+            ],
+            "time": "2014-09-21 07:54:27"
+        },
+        {
             "name": "sulu/search-bundle",
             "version": "dev-develop",
             "source": {
@@ -6342,9 +6611,7 @@
             "time": "2014-09-10 07:20:00"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "sulu/sulu": 20,
@@ -6360,6 +6627,10 @@
         "sulu/product-bundle": 20,
         "sulu/location-bundle": 20,
         "sulu/search-bundle": 20,
+        "sulu/sales-core-bundle": 20,
+        "sulu/sales-order-bundle": 20,
+        "sulu/sales-shipping-bundle": 20,
+        "sulu/sales-invoice-bundle": 20,
         "jms/serializer-bundle": 20,
         "stof/doctrine-extensions-bundle": 20,
         "doctrine/doctrine-fixtures-bundle": 20,
@@ -6376,7 +6647,5 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }

@@ -13,3 +13,12 @@ sulu_admin:
         account-detail:
             mappings:
                 - sulu-contact-main-contact
+        order-info:
+            mappings:
+                - sulu-sales-core-simple-account
+                - sulu-sales-core-simple-contact
+        order-detail:
+            mappings:
+                - sulu-sales-core-simple-account
+                - sulu-sales-core-simple-contact
+                - sulu-sales-order-order-details

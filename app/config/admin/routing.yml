@@ -87,3 +87,20 @@ client_website:
     type: portal
     resource: "@ClientWebsiteBundle/Resources/config/routing.yml"
 
+sulu_sales_order:
+    resource: "@SuluSalesOrderBundle/Resources/config/routing.xml"
+    prefix: /admin/order
+
+sulu_sales_order_api:
+    type: rest
+    resource: "@SuluSalesOrderBundle/Resources/config/routing_api.xml"
+    prefix: /admin/api
+
+sulu_sales_shipping:
+    resource: "@SuluSalesShippingBundle/Resources/config/routing.xml"
+    prefix: /admin/shipping
+
+sulu_sales_shipping_api:
+    type: rest
+    resource: "@SuluSalesShippingBundle/Resources/config/routing_api.xml"
+    prefix: /admin/api
