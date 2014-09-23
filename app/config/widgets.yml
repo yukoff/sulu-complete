@@ -22,3 +22,4 @@ sulu_admin:
                 - sulu-sales-core-simple-account
                 - sulu-sales-core-simple-contact
                 - sulu-sales-order-order-details
+                - sulu-sales-order-order-flow-of-documents
