@@ -24,11 +24,6 @@ doctrine:
             string_functions:
                 CAST: Sulu\Component\Rest\DQL\Cast
 
-sulu_core:
-    webspace:
-        request_analyzer:
-            enabled: false
-
 sulu_content:
     preview:
         fallback:
@@ -87,3 +82,21 @@ sulu_contact:
             id: 1
             name: female
             translation: contact.contacts.formOfAddress.female
+
+massive_build:
+    targets:
+        prod:
+            dependencies:
+                database: ~
+                phpcr: ~
+                fixtures: ~
+        dev:
+            dependencies:
+                database: ~
+                fixtures: ~
+                phpcr: ~
+                user: ~
+        maintain:
+            dependencies:
+                node_order:
+                search_index:
