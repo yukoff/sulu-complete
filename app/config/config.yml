@@ -112,3 +112,8 @@ sulu_core:
 
 sulu_product:
     template: ClientWebsiteBundle:views:product.html.twig
+
+sulu_media:
+    search:
+        enabled: true
+
