@@ -64,6 +64,9 @@ doctrine:
             Sulu\Component\Security\UserInterface: Sulu\Bundle\SecurityBundle\Entity\User
             Sulu\Bundle\ProductBundle\Entity\ProductInterface: Sulu\Bundle\ProductBundle\Entity\Product
             Sulu\Bundle\SecurityBundle\Entity\RoleInterface: Sulu\Bundle\SecurityBundle\Entity\Role
+        dql:
+            string_functions:
+                group_concat: Oro\ORM\Query\AST\Functions\String\GroupConcat
 
 stof_doctrine_extensions:
     orm:
