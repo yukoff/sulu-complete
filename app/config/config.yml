@@ -110,5 +110,15 @@ sulu_core:
     http_cache:
         ~
 
+sulu_media:
+    search:
+        enabled: true
+    ghost_script:
+        path: %ghost_script_path%
+
+cmf_core:
+    publish_workflow:
+        enabled: false
+
 sulu_product:
     template: ClientWebsiteBundle:views:product.html.twig
