@@ -22,3 +22,13 @@ sulu_admin:
                 - sulu-sales-core-simple-account
                 - sulu-sales-core-simple-contact
                 - sulu-sales-order-order-details
+        shipping-info:
+            mappings:
+                - sulu-sales-core-simple-account
+                - sulu-sales-core-simple-contact
+        shipping-detail:
+            mappings:
+                - sulu-sales-core-simple-account
+                - sulu-sales-core-simple-contact
+                - sulu-sales-shipping-shipping-details
+                - sulu-sales-shipping-shipping-flow-of-documents
