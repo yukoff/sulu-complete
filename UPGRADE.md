@@ -1,8 +1,25 @@
 # Upgrade
 
-## unrelease
+## 0.9.0
+
+* Smart-Content Pagination: introduced page and hasNextPage view vars
+  - see commit https://github.com/sulu-cmf/sulu-standard/commit/e5f7f8e520ac8199b71bbd337c7f2df5ae3a85f4
+* Smart-Content filters current page
+
+## 0.9.0
+
 * Every template must have a title property
   - Therefore the tag `sulu.node.name` doesn't have to be set anymore
+* Page templates are stored in `app/Resources/pages` instead of `app/Resources/templates`
+* config: default_type has now a sub-properties `page` and `snippet`
+  - change `default_type: <name>` to `default_type: page: <name>`
+* config: replace `sulu_core.content.templates` with `sulu_core.content.structure`
+* PHPCR Node-types: Additional node types added 
+  - run `app/console sulu:phpcr:init`
+  - and `app/console sulu:webspaces:init`
+  - and `app/console doctrine:phpcr:nodes:update --query="SELECT * FROM [nt:base] AS c WHERE [jcr:mixinTypes]='sulu:content'" --apply-closure="\$node->addMixin('sulu:page');"`
+* URL pre-caching: URL now stored in node to load current URL fast
+  - execute command `app/console sulu:upgrade:0.9.0:resource-locator`
 
 ## 0.8.2
   - add `ghost_script_path` parameter to app/conifg/parameters.yml

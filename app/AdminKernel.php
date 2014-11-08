@@ -18,7 +18,6 @@ class AdminKernel extends \AbstractKernel
         $bundles = parent::registerBundles();
         $bundles[] = new Symfony\Bundle\SecurityBundle\SecurityBundle();
         $bundles[] = new Sulu\Bundle\AdminBundle\SuluAdminBundle();
-        $bundles[] = new Sulu\Bundle\TranslateBundle\SuluTranslateBundle();
 
         return $bundles;
     }

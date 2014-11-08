@@ -45,6 +45,7 @@ abstract class AbstractKernel extends SuluKernel
             new Sulu\Bundle\MediaBundle\SuluMediaBundle(),
             new Sulu\Bundle\SecurityBundle\SuluSecurityBundle(),
             new Sulu\Bundle\CategoryBundle\SuluCategoryBundle(),
+            new Sulu\Bundle\SnippetBundle\SuluSnippetBundle(),
             new Sulu\Bundle\ContentBundle\SuluContentBundle(),
             new Sulu\Bundle\CoreBundle\SuluCoreBundle(),
             new Sulu\Bundle\TagBundle\SuluTagBundle(),
@@ -55,6 +56,8 @@ abstract class AbstractKernel extends SuluKernel
             new Sulu\Bundle\Sales\CoreBundle\SuluSalesCoreBundle(),
             new Sulu\Bundle\Sales\OrderBundle\SuluSalesOrderBundle(),
             new Sulu\Bundle\Sales\ShippingBundle\SuluSalesShippingBundle(),
+
+            new Sulu\Bundle\TranslateBundle\SuluTranslateBundle(),
 
             // website
             new Client\Bundle\WebsiteBundle\ClientWebsiteBundle(),
