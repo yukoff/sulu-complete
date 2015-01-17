@@ -1,6 +1,39 @@
 # Upgrade
 
-## 0.9.0
+## 0.14.0
+* Role name is now unique
+  * check roles and give them unique names
+* Apply all permissions correctly, otherwise users won't be able to work on snippets, categories or tags anymore
+
+## 0.13.0
+
+* Remove `/cmf/<webspace>/temp` from repository
+  * run `app/console doctrine:phpcr:node:remove /cmf/<webspace>/temp` foreach webspace
+
+## 0.12.0
+
+* Permissions have to be correct now, because they are applied
+  * otherwise add a permission value of 120 for `sulu.security.roles`,
+    `sulu.security.groups` and `sulu.security.users` to one user to change
+    the settings in the UI
+  * also check for the correct value in the `locale`-column of the `se_user_roles`-table
+    * value has to be a json-string (e.g. `["en", "de"]`)
+* Snippet content type defaults to all snippet types available instead of the
+  default one
+  * Explicitly define a snippet type in the parameters if this is not desired
+
+## 0.11.0
+
+* Remove the following lines from `app/config/config.yml`:
+
+````yaml
+    content:
+        path: "%kernel.root_dir%/../vendor/sulu/sulu/src/Sulu/Bundle/ContentBundle/Content/templates"
+        internal: true
+        type: page
+````
+
+## 0.10.0
 
 * Smart-Content Pagination: introduced page and hasNextPage view vars
   - see commit https://github.com/sulu-cmf/sulu-standard/commit/e5f7f8e520ac8199b71bbd337c7f2df5ae3a85f4

@@ -22,6 +22,7 @@
         "incenteev/composer-parameter-handler": "~2.0",
 
         "sulu/sulu": "dev-develop",
+        "sulu/translate-bundle": "dev-develop",
         "sulu/product-bundle": "dev-develop",
         "sulu/sales-core-bundle": "dev-develop",
         "sulu/sales-order-bundle": "dev-develop",
@@ -66,8 +67,9 @@
     "extra": {
         "symfony-app-dir": "app",
         "symfony-web-dir": "web",
-        "incenteev-parameters": {
-            "file": "app/config/parameters.yml"
-        }
+        "incenteev-parameters": [
+            { "file": "app/config/parameters.yml" },
+            { "file": "app/config/phpcr.yml" }
+        ]
     }
 }

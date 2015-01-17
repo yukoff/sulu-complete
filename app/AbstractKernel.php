@@ -57,8 +57,6 @@ abstract class AbstractKernel extends SuluKernel
             new Sulu\Bundle\Sales\OrderBundle\SuluSalesOrderBundle(),
             new Sulu\Bundle\Sales\ShippingBundle\SuluSalesShippingBundle(),
 
-            new Sulu\Bundle\TranslateBundle\SuluTranslateBundle(),
-
             // website
             new Client\Bundle\WebsiteBundle\ClientWebsiteBundle(),
             new Liip\ThemeBundle\LiipThemeBundle(),
