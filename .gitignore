@@ -20,10 +20,10 @@
 # IDEs
 .idea/*
 *.iml
+*~
 
 # System files
 .DS_Store
-
 
 # webspaces
 /app/Resources/webspaces
@@ -39,3 +39,6 @@
 
 # old structure files
 /app/Resources/templates/*
+
+# Behat local file
+behat.yml

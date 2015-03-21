@@ -51,6 +51,8 @@ abstract class AbstractKernel extends SuluKernel
             new Sulu\Bundle\TagBundle\SuluTagBundle(),
             new Sulu\Bundle\WebsiteBundle\SuluWebsiteBundle(),
             new Sulu\Bundle\LocationBundle\SuluLocationBundle(),
+            new Sulu\Bundle\HttpCacheBundle\SuluHttpCacheBundle(),
+            new Sulu\Bundle\WebsocketBundle\SuluWebsocketBundle(),
             new Sulu\Bundle\ProductBundle\SuluProductBundle(),
             new Sulu\Bundle\SearchBundle\SuluSearchBundle(),
             new Sulu\Bundle\Sales\CoreBundle\SuluSalesCoreBundle(),
@@ -71,8 +73,11 @@ abstract class AbstractKernel extends SuluKernel
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
 
+
             // debug enhancement
             $bundles[] = new RaulFraile\Bundle\LadybugBundle\RaulFraileLadybugBundle();
+            $bundles[] = new Sulu\Bundle\TestBundle\SuluTestBundle();
+            $bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();
         }
 
         return $bundles;
