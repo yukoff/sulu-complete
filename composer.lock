@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "acfffb18c87741bcbabfd2ea0961879b",
+    "hash": "522fb60b9759a453100c0fa0c2af9a98",
     "packages": [
         {
             "name": "behat/behat",
@@ -4408,12 +4408,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-io/SuluSalesCoreBundle.git",
-                "reference": "b872b4697d63cbdf2d0bf8c2ebd71533e8516e5e"
+                "reference": "1b2ed07a20871de11e67871c521f4cd9e2ea3408"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-io/SuluSalesCoreBundle/zipball/b872b4697d63cbdf2d0bf8c2ebd71533e8516e5e",
-                "reference": "b872b4697d63cbdf2d0bf8c2ebd71533e8516e5e",
+                "url": "https://api.github.com/repos/sulu-io/SuluSalesCoreBundle/zipball/1b2ed07a20871de11e67871c521f4cd9e2ea3408",
+                "reference": "1b2ed07a20871de11e67871c521f4cd9e2ea3408",
                 "shasum": ""
             },
             "require": {
@@ -4483,7 +4483,7 @@
                 "items",
                 "sales"
             ],
-            "time": "2015-04-21 14:56:55"
+            "time": "2015-04-23 11:06:03"
         },
         {
             "name": "sulu/sales-invoice-bundle",
@@ -4558,12 +4558,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-io/SuluSalesOrderBundle.git",
-                "reference": "bf38a58df2302a6b8bd4fc72de0f01e285abb8b5"
+                "reference": "b069e70da1660b75cbd2c1fc663b1530c687de18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-io/SuluSalesOrderBundle/zipball/bf38a58df2302a6b8bd4fc72de0f01e285abb8b5",
-                "reference": "bf38a58df2302a6b8bd4fc72de0f01e285abb8b5",
+                "url": "https://api.github.com/repos/sulu-io/SuluSalesOrderBundle/zipball/b069e70da1660b75cbd2c1fc663b1530c687de18",
+                "reference": "b069e70da1660b75cbd2c1fc663b1530c687de18",
                 "shasum": ""
             },
             "require": {
@@ -4636,7 +4636,7 @@
                 "order",
                 "sales"
             ],
-            "time": "2015-04-21 15:09:40"
+            "time": "2015-04-23 11:04:04"
         },
         {
             "name": "sulu/sales-shipping-bundle",
@@ -4645,12 +4645,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-io/SuluSalesShippingBundle.git",
-                "reference": "108898d918228278634103422e4c8ed2fefd81f3"
+                "reference": "5585320431d84625ba818f9b5de1f97f2d8fd8d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-io/SuluSalesShippingBundle/zipball/108898d918228278634103422e4c8ed2fefd81f3",
-                "reference": "108898d918228278634103422e4c8ed2fefd81f3",
+                "url": "https://api.github.com/repos/sulu-io/SuluSalesShippingBundle/zipball/5585320431d84625ba818f9b5de1f97f2d8fd8d7",
+                "reference": "5585320431d84625ba818f9b5de1f97f2d8fd8d7",
                 "shasum": ""
             },
             "require": {
@@ -4721,7 +4721,7 @@
                 "sales",
                 "shipping"
             ],
-            "time": "2015-03-27 10:22:02"
+            "time": "2015-04-23 11:03:52"
         },
         {
             "name": "sulu/sulu",
