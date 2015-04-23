@@ -11,8 +11,8 @@ parameters:
     mailer_user:        ~
     mailer_password:    ~
     mailer_spool:       ~
-    mailer_from:        office@pool-alpin.com
-    mailer_to:          office@pool-alpin.com
+    mailer_from:        null
+    mailer_to:          null
 
     locale:             en
     secret:             ThisTokenIsNotSoSecretChangeIt
