@@ -68,13 +68,11 @@ abstract class AbstractKernel extends SuluKernel
 
             // pdf bundle
             new Massive\Bundle\PdfBundle\MassivePdfBundle(),
+            new Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
 
             // crm bundle
             new Sulu\Bundle\ContactExtensionBundle\SuluContactExtensionBundle(),
             new Sulu\Bundle\ActivityBundle\SuluActivityBundle(),
-
-            // snappy pdf bundle
-            new Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

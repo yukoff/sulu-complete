@@ -39,8 +39,8 @@
         "zendframework/zendsearch": "@dev",
 
         "massive/build-bundle": "0.2.*",
-        "massive/pdf-bundle": "@dev",
 
+        "massive/pdf-bundle": "@dev",
         "knplabs/knp-snappy-bundle": "dev-master",
 
         "behat/behat": "~3.0.0",

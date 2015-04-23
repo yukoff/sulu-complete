@@ -11,8 +11,8 @@ parameters:
     mailer_user:        ~
     mailer_password:    ~
     mailer_spool:       ~
-    mailer_from:        null
-    mailer_to:          null
+    mailer_from:        ~
+    mailer_to:          ~
 
     locale:             en
     secret:             ThisTokenIsNotSoSecretChangeIt
