@@ -43,10 +43,10 @@ sulu_admin:
 parameters:
     jms_serializer.cache_naming_strategy.class: JMS\Serializer\Naming\IdenticalPropertyNamingStrategy
 
-# SULU Contact Configuration
+# SULU Contact Extension Configuration
 # define the account types and form of address
 # tabs key must match tab-id specified in content-navigation
-sulu_contact:
+sulu_contact_extension:
     account_types:
         basic:
             id: 0
@@ -77,6 +77,8 @@ sulu_contact:
             translation: contact.account.type.supplier
             tabs:
                 financials: true
+
+sulu_contact:
     form_of_address:
         male:
             id: 0
