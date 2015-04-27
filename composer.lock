@@ -4346,12 +4346,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-io/SuluProductBundle.git",
-                "reference": "aee98e264a5ba1e257eed070610017c52b719c3d"
+                "reference": "bd3c9571d3155d7f920dd6ee2cad3f06917adc56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-io/SuluProductBundle/zipball/aee98e264a5ba1e257eed070610017c52b719c3d",
-                "reference": "aee98e264a5ba1e257eed070610017c52b719c3d",
+                "url": "https://api.github.com/repos/sulu-io/SuluProductBundle/zipball/bd3c9571d3155d7f920dd6ee2cad3f06917adc56",
+                "reference": "bd3c9571d3155d7f920dd6ee2cad3f06917adc56",
                 "shasum": ""
             },
             "require": {
@@ -4399,7 +4399,7 @@
                 "product",
                 "sulu"
             ],
-            "time": "2015-04-23 15:40:11"
+            "time": "2015-04-27 07:59:22"
         },
         {
             "name": "sulu/sales-core-bundle",
@@ -4558,12 +4558,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-io/SuluSalesOrderBundle.git",
-                "reference": "f6685316d9868a24a4273920cd112ea11f034522"
+                "reference": "2e2e902486aba9b1c54350883b3b21729171fce4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-io/SuluSalesOrderBundle/zipball/f6685316d9868a24a4273920cd112ea11f034522",
-                "reference": "f6685316d9868a24a4273920cd112ea11f034522",
+                "url": "https://api.github.com/repos/sulu-io/SuluSalesOrderBundle/zipball/2e2e902486aba9b1c54350883b3b21729171fce4",
+                "reference": "2e2e902486aba9b1c54350883b3b21729171fce4",
                 "shasum": ""
             },
             "require": {
@@ -4636,7 +4636,7 @@
                 "order",
                 "sales"
             ],
-            "time": "2015-04-24 11:11:32"
+            "time": "2015-04-27 08:17:43"
         },
         {
             "name": "sulu/sales-shipping-bundle",
@@ -4645,12 +4645,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-io/SuluSalesShippingBundle.git",
-                "reference": "5585320431d84625ba818f9b5de1f97f2d8fd8d7"
+                "reference": "b71b832e5ec48659e7de9fcdc5bb35ccd61bb22f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-io/SuluSalesShippingBundle/zipball/5585320431d84625ba818f9b5de1f97f2d8fd8d7",
-                "reference": "5585320431d84625ba818f9b5de1f97f2d8fd8d7",
+                "url": "https://api.github.com/repos/sulu-io/SuluSalesShippingBundle/zipball/b71b832e5ec48659e7de9fcdc5bb35ccd61bb22f",
+                "reference": "b71b832e5ec48659e7de9fcdc5bb35ccd61bb22f",
                 "shasum": ""
             },
             "require": {
@@ -4721,7 +4721,7 @@
                 "sales",
                 "shipping"
             ],
-            "time": "2015-04-23 11:03:52"
+            "time": "2015-04-27 08:18:57"
         },
         {
             "name": "sulu/sulu",
@@ -4729,12 +4729,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-io/sulu.git",
-                "reference": "d6dcab980011e4443df619fff7151503f95f145c"
+                "reference": "f256bac38f41ee0d66f9c102332e1b2ec65fa985"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-io/sulu/zipball/d6dcab980011e4443df619fff7151503f95f145c",
-                "reference": "d6dcab980011e4443df619fff7151503f95f145c",
+                "url": "https://api.github.com/repos/sulu-io/sulu/zipball/f256bac38f41ee0d66f9c102332e1b2ec65fa985",
+                "reference": "f256bac38f41ee0d66f9c102332e1b2ec65fa985",
                 "shasum": ""
             },
             "require": {
@@ -4821,7 +4821,7 @@
                 "core",
                 "sulu"
             ],
-            "time": "2015-04-27 05:53:24"
+            "time": "2015-04-27 07:25:18"
         },
         {
             "name": "swiftmailer/swiftmailer",
