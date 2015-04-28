@@ -3585,16 +3585,16 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.4.0",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "8724cd239f8ef4c046f55a3b18b4d91cc7f3e4c5"
+                "reference": "3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/8724cd239f8ef4c046f55a3b18b4d91cc7f3e4c5",
-                "reference": "8724cd239f8ef4c046f55a3b18b4d91cc7f3e4c5",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373",
+                "reference": "3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373",
                 "shasum": ""
             },
             "require": {
@@ -3641,7 +3641,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2015-03-27 19:31:25"
+            "time": "2015-04-27 22:15:08"
         },
         {
             "name": "phpspec/prophecy-phpunit",
@@ -4729,12 +4729,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-io/sulu.git",
-                "reference": "19eb4b5f725d028c42efb541f090cb3608fceff0"
+                "reference": "08ed673436473b97670c55d1983d83b0f951e6f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-io/sulu/zipball/19eb4b5f725d028c42efb541f090cb3608fceff0",
-                "reference": "19eb4b5f725d028c42efb541f090cb3608fceff0",
+                "url": "https://api.github.com/repos/sulu-io/sulu/zipball/08ed673436473b97670c55d1983d83b0f951e6f0",
+                "reference": "08ed673436473b97670c55d1983d83b0f951e6f0",
                 "shasum": ""
             },
             "require": {
@@ -4821,7 +4821,7 @@
                 "core",
                 "sulu"
             ],
-            "time": "2015-04-27 09:51:11"
+            "time": "2015-04-28 09:15:42"
         },
         {
             "name": "swiftmailer/swiftmailer",
