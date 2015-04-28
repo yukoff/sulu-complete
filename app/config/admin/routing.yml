@@ -88,11 +88,11 @@ sulu_activity:
     resource: "@SuluActivityBundle/Resources/config/routing.xml"
     prefix: /admin/activity
 
-sulu_contact_extension_api:
+sulu_contact_extension:
     resource: "@SuluContactExtensionBundle/Resources/config/routing.xml"
     prefix: /admin/contact
 
-sulu_contact_extension:
+sulu_contact_extension_api:
     type: rest
     resource: "@SuluContactExtensionBundle/Resources/config/routing_api.xml"
     prefix: /admin/api
