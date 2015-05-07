@@ -94,7 +94,7 @@ sulu_contact_extension:
 
 sulu_contact_extension_api:
     type: rest
-    resource: "@SuluContactExtensionBundle/Resources/config/routing_api.xml"
+    resource: "@SuluContactExtensionBundle/Resources/config/routing_extension_api.xml"
     prefix: /admin/api
 
 # for preview
