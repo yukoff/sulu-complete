@@ -140,10 +140,6 @@ sulu_core:
 sulu_media:
     search:
         enabled: true
-    ghost_script:
-        path: "%ghost_script_path%"
-    format_manager:
-        response_headers: "%format_manager.response_headers%"
 
 # SULU Websocket configuration
 sulu_websocket:
@@ -171,6 +167,28 @@ sulu_http_cache:
     proxy_client:
         symfony:
             enabled: true
+
+sulu_content:
+    search:
+        mapping:
+            Sulu\Component\Content\Structure\Page:
+                index: page
+                category: page
+            Sulu\Component\Content\Structure\Snippet:
+                index: snippet
+                category: snippet
+
+massive_search:
+    localization_strategy: index
+    persistence:
+        doctrine_orm:
+            enabled: true
+doctrine_cache:
+   providers:
+       phpcr_meta:
+           type: %phpcr_cache%
+       phpcr_nodes:
+           type: %phpcr_cache%
 
 # SULU Product configuration
 sulu_product:

@@ -35,6 +35,7 @@
         "nelmio/alice": "~1.7",
         "doctrine/doctrine-fixtures-bundle": "2.2.*",
 
+        "massive/search-bundle": "~1.0@dev",
         "zendframework/zend-stdlib": "~2.3",
         "zendframework/zendsearch": "@dev",
 
@@ -43,18 +44,18 @@
         "massive/pdf-bundle": "@dev",
         "knplabs/knp-snappy-bundle": "dev-master",
 
-        "behat/behat": "~3.0.0",
-        "behat/mink-extension": "~2.0@dev",
-        "behat/mink-selenium2-driver": "~1.2@dev",
-        "behat/symfony2-extension": "~2.0@dev",
-
-        "jackalope/jackalope-doctrine-dbal": "1.1.*"
+        "jackalope/jackalope-doctrine-dbal": "~1.2.0",
+        "jackalope/jackalope-jackrabbit": "~1.2.0",
+        "doctrine/doctrine-cache-bundle": "~1.0"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3",
         "sauce/sausage": "0.9.*",
-        "phpunit/phpunit": "~4.0.0",
-        "phpcr/phpcr-shell": "@beta"
+        "phpcr/phpcr-shell": "@beta",
+        "behat/behat": "~3.0.0",
+        "behat/mink-extension": "~2.0@dev",
+        "behat/mink-selenium2-driver": "~1.2@dev",
+        "behat/symfony2-extension": "~2.0@dev"
     },
     "scripts": {
         "post-install-cmd": [

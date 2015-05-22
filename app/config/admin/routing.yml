@@ -102,6 +102,10 @@ client_website:
     type: portal
     resource: "@ClientWebsiteBundle/Resources/config/routing.yml"
 
+sulu_search:
+    resource: "@SuluSearchBundle/Resources/config/routing.yml"
+    prefix: /admin/search
+
 sulu_translate:
     resource: "@SuluTranslateBundle/Resources/config/routing.yml"
     prefix: /admin/translate

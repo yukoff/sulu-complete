@@ -1,11 +1,234 @@
 # Upgrade
 
-#dev-develop
+## 0.18.0
+
+## Search index rebuild
+
+Old data in search index can cause problems. You should clear the folder `app/data` and rebuild the index.
+ 
+```bash
+rm -rf app/data/*
+app/console massive:search:index:rebuild
+```
+
+### Search adapter name changed
+
+Adapter name changed e.g. from `massive_search_adapter.<adaptername>` to just `<adaptername>` in
+configuration.
+
+### Search index name changed
+
+Pages and snippets are now indexed in separate indexes for pages and snippets.
+Replace all instances of `->index('content')` with `->indexes(array('page',
+'snippet')`.
+
+### Search searches non-published pages by default
+
+Pages which are "Test" are no longer indexed. If you require only
+"published" pages modify your search query to start with: `state:published AND `
+and escape the quotes:
+
+```php
+$hits = $searchManager
+    ->createSearch(sprintf('state:published AND "%s"', str_replace('"', '\\"', $query)))
+    ->locale($locale)
+    ->index('page')
+    ->execute();
+
+### PHPCR: Doctrine-Dbal
+
+The structure of data has changed. Run following command:
+
+```bash
+app/console doctrine:schema:update --force
+```
+
+### Smart content tag operator
+
+The default operator for tags is now changed to OR. So you have to update with the following command,
+because the previous default operator was AND.
+
+```bash
+app/console sulu:upgrade:0.18.0:smart-content-operator tag and
+```
+
+### Media Format Cache Public Folder
+
+If you use the `sulu_media.format_cache.public_folder` parameter, 
+the following configuration update need to be done,
+because the parameter does not longer exists:
+
+``` yml
+sulu_media:
+    format_cache:
+        public_folder: 'public' # delete this line
+        path: %kernel.root_dir%/../public/uploads/media # add this new configuration
+```
+
+### Admin
+
+The `Sulu` prefix from all `ContentNavigationProviders` and `Admin` classes has
+been removed. You have to change these names in all usages of this classes in
+your own code.
+
+### Media preview urls
+
+The thumbnail url will only be generated for supported mime-types. Otherwise it returns a zero length array.
+
+To be sure that it is possible to generate a preview image you should check if the thumbnail url isset:
+
+```twig
+{% if media.thumbnails['200x200'] is defined %}
+<img src="{{ media.thumbnails['200x200'] }}"/>
+{% endif %}
+```
+
+### Error templates
+
+Variables of exception template `ClientWebsiteBundle:error404.html.twig` has changed.
+
+* `status_code`: response code 
+* `status_text`: response text
+* `exception`: whole exception object
+* `currentContent`: content which was rendered before exception was thrown
+
+Especially for 404 exception the `path` variable has been removed.
+
+Before:
+```twig
+<p>The path "<em>{{ path }}</em>" does not exist.</p>
+```
+
+After:
+```twig
+<p>The path "<em>{{ request.resourceLocator }}</em>" does not exist.</p>
+```
+
+The behaviour of the errors has changed. In dev mode no custom error pages appears.
+To see them you have to open following url:
+
+```
+{portal-prefix}/_error/{status_code}
+sulu.lo/de/_error/500
+```
+
+More Information can be found in [sulu-docs](http://docs.sulu.io/en/latest/cookbook/custom-error-page.html).
+
+To keep the backward compatibility you have to add following lines to your webspace configuration:
+
+```xml
+<webspace>
+    ...
+    
+    <theme>
+        ...
+        
+        <error-templates>
+            <error-template code="404">ClientWebsiteBundle:views:error404.html.twig</error-template>
+            <error-template default="true">ClientWebsiteBundle:views:error.html.twig</error-template>
+        </error-templates>
+    </theme>
+    
+    ...
+</webspace>
+```
+
+### Twig Templates
+
+If a page has no url for a specific locale, it returns now the resource-locator to the index page (`'/'`) instead of a
+empty string (`''`).
+ 
+__Before:__
+```
+urls = array(
+    'de' => '/ueber-uns',
+    'en' => '/about-us',
+    'es' => ''
+);
+```
+
+__After:__
+```
+urls = array(
+    'de' => '/ueber-uns',
+    'en' => '/about-us',
+    'es' => '/'
+);
+```
+
+# 0.17.0
 
 ## Ladybug
 
 The ladybug bundle have been removed in favour of the new
 [Symfony VarDumper Component](http://symfony.com/blog/new-in-symfony-2-6-vardumper-component)
+
+### Media
+
+Fill up the database column `me_collection_meta.locale` with the translated language like: `de` or `en`. If you
+know you have only added collections in only one language you can use following sql statement:
+
+```sql
+UPDATE `me_collection_meta` SET `locale` = 'de';
+```
+
+Due to this it is possible that one collection has multiple metadata for one language. You have to remove this
+duplicates by hand. For example one collection should have only one meta for the language `de`.
+
+The collection and media has now a specific field to indicate which meta is default. For this run following commands.
+
+```bash
+app/console sulu:upgrade:0.17.0:collections
+app/console sulu:upgrade:0.17.0:media
+```
+
+### Contact and Account Security
+
+The security checks are now also applied to contacts and accounts, make sure
+that the users you want to have access have the correct permissions.
+
+### Content
+
+Behaviour of internal links has changed. It returns the link title for navigation/smartcontent/internal-link.
+
+### Media Types
+
+The media types are now set by wildcard check and need to be updated,
+by running the following command: `sulu:media:type:update`.
+
+### Media API Object
+
+The `versions` attribute of the media API object changed from [array to object list](https://github.com/sulu-io/docs/pull/14/files).
+
+### Contact
+
+CRM-Components moved to a new bundle. If you enable the new Bundle everything should work as before.
+
+BC-Breaks are:
+
+ * AccountCategory replaced with standard Categories here is a migration needed
+ 
+For a database upgrade you have to do following steps:
+
+* The Account has no `type` anymore. This column has to be removed from `co_accounts` table.
+* The table `co_account_categories` has to be removed manually.
+* The table `co_terms_of_delivery` has to be removed manually.
+* The table `co_terms_of_payment` has to be removed manually.
+* `app/console doctrine:schema:update --force`
+
+### Security
+
+The names of some classes have changed like shown in the following table:
+
+Old name                                                          | New name
+------------------------------------------------------------------|--------------------------------------------------------------
+Sulu\Bundle\SecurityBundle\Entity\RoleInterface                   | Sulu\Component\Security\Authentication\RoleInterface
+Sulu\Component\Security\UserInterface                             | Sulu\Component\Security\Authentication\UserInterface
+Sulu\Bundle\SecurityBundle\Factory\UserRepositoryFactoryInterface | Sulu\Component\Security\Authentication\UserRepositoryFactoryInterface
+Sulu\Component\Security\UserRepositoryInterface                   | Sulu\Component\Security\Authentication\UserRepositoryInterface
+Sulu\Bundle\SecurityBundle\Permission\SecurityCheckerInterface    | Sulu\Component\Security\Authorization\SecurityCheckerInterface
+
+If you have used any of these interfaces you have to update them.
 
 ## 0.16.0
 
