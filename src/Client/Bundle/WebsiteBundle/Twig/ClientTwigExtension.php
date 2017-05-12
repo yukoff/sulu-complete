@@ -1,6 +1,7 @@
 <?php
+
 /*
- * This file is part of the Sulu CMS.
+ * This file is part of Sulu.
  *
  * (c) MASSIVE ART WebServices GmbH
  *
@@ -11,7 +12,7 @@
 namespace Client\Bundle\WebsiteBundle\Twig;
 
 /**
- * Class ClientTwigExtension
+ * Class ClientTwigExtension.
  */
 class ClientTwigExtension extends \Twig_Extension
 {
@@ -24,19 +25,19 @@ class ClientTwigExtension extends \Twig_Extension
     }
 
     /**
-     * Add your custom filters here
+     * Add your custom filters here.
      */
     public function getFilters()
     {
-        return array();
+        return [];
     }
 
     /**
-     * Add your custom functions here
+     * Add your custom functions here.
      */
     public function getFunctions()
     {
-        return array();
+        return [];
     }
 
     // Add here some custom twig extensions

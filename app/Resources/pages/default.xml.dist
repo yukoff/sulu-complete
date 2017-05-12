@@ -15,23 +15,37 @@
     </meta>
 
     <properties>
-        <property name="title" type="text_line" mandatory="true">
+        <section name="highlight">
+            <properties>
+                <property name="title" type="text_line" mandatory="true">
+                    <meta>
+                        <title lang="de">Titel</title>
+                        <title lang="en">Title</title>
+                    </meta>
+                    <params>
+                        <param name="headline" value="true"/>
+                    </params>
+
+                    <tag name="sulu.rlp.part"/>
+                </property>
+
+                <property name="url" type="resource_locator" mandatory="true">
+                    <meta>
+                        <title lang="de">Adresse</title>
+                        <title lang="en">Resourcelocator</title>
+                    </meta>
+
+                    <tag name="sulu.rlp"/>
+                </property>
+            </properties>
+        </section>
+
+        <property name="headerimage" type="media_selection">
+            <tag name="sulu.search.field" role="image" index="false"/>
             <meta>
-                <title lang="de">Titel</title>
-                <title lang="en">Title</title>
+                <title lang="de">Headerbild</title>
+                <title lang="en">Header image</title>
             </meta>
-
-            <tag name="sulu.rlp.part"/>
-        </property>
-
-        <property name="url" type="resource_locator" mandatory="true">
-            <meta>
-                <title lang="de">Adresse</title>
-                <title lang="en">Resourcelocator</title>
-            </meta>
-
-            <tag name="sulu.rlp"/>
-            <tag name="sulu.search.field" role="description"/>
         </property>
 
         <property name="links" type="internal_links">
@@ -65,13 +79,13 @@
                     </meta>
 
                     <params>
-                        <param name="links" value="true"/>
-                        <param name="tables" value="true"/>
-                        <param name="scripts" value="true"/>
-                        <param name="iframes" value="true"/>
+                        <param name="link" value="true"/>
+                        <param name="table" value="true"/>
                         <param name="height" value="100"/>
-                        <param name="maxHeight" value="500"/>
-                        <param name="pasteFromWord" value="true"/>
+                        <param name="max_height" value="500"/>
+                        <param name="paste_from_word" value="true"/>
+                        <param name="extra_allowed_content"
+                               value="img(*)[*]; span(*)[*]; div(*)[*]; iframe(*)[*]; script(*)[*]"/>
                     </params>
                 </property>
             </properties>

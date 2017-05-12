@@ -6,9 +6,6 @@ security:
     acl:
         connection: default
 
-    acl:
-        connection: default
-
     encoders:
         Sulu\Bundle\SecurityBundle\Entity\User:
             algorithm: sha512
@@ -17,7 +14,7 @@ security:
 
     providers:
         sulu:
-            id: sulu_security.user_repository
+            id: sulu_security.user_provider
 
     access_control:
         - { path: ^/admin/reset, roles: IS_AUTHENTICATED_ANONYMOUSLY }
@@ -36,6 +33,7 @@ security:
                 check_path: sulu_admin.login_check
                 success_handler: sulu_security.authentication_handler
                 failure_handler: sulu_security.authentication_handler
+                csrf_token_generator: security.csrf.token_manager
             logout:
                 path: /admin/logout
                 target: /admin/

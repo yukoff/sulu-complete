@@ -9,22 +9,22 @@ env:
         - SAUCE_CONNECT_READY_FILE=/tmp/sauce-connect-ready
         - LOGS_DIR=/tmp/sulu/logs
         - DB=mysql
-        - BEHAT_PROFILE=sauce_labs
-    matrix:
-        - BEHAT_SUITES="admin contact"
-        - BEHAT_SUITES="content core location"
-        - BEHAT_SUITES="media security snippet tag"
-        - BEHAT_SUITES="category"
+        - BEHAT_PROFILE=travis
 
 script: ./tests/runtests.sh
 
 php:
-    - 5.6
+    - 5.5
+    - 7.0
 
-before_script: ./tests/beforetests.sh
+before_script:
+    - echo "memory_limit=2048M" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+    - ./tests/beforetests.sh
 
 after_script:
-    - cat /tmp/http_log
+    - ./tests/travis_print_logs.sh
+    - cat app/logs/admin/prod/prod.log
+    - cat app/logs/website/prod/prod.log
 
 notifications:
     slack:

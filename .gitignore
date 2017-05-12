@@ -5,9 +5,13 @@
 /app/config/parameters.yml
 /app/config/phpcr.yml
 /app/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+/app/phpunit.xml
 /bin/
 /build/
 /composer.phar
+composer.lock
 /jackrabbit
 /uploads/*
 /uploads/media/*
@@ -16,6 +20,8 @@
 /web/css
 /web/js
 /web/uploads/media/*
+/web/admin/translations/*
+!/web/admin/translations/.gitkeep
 
 # IDEs
 .idea/*
@@ -26,7 +32,7 @@
 .DS_Store
 
 # webspaces
-/app/Resources/webspaces
+/app/Resources/webspaces/*
 !/app/Resources/webspaces/*.dist
 
 # pages

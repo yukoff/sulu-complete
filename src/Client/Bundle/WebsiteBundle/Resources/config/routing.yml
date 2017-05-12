@@ -1,4 +1,0 @@
-website_search:
-    pattern: /search
-    defaults:
-        _controller: "ClientWebsiteBundle:Search:query"

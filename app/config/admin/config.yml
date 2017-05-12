@@ -1,23 +1,12 @@
 imports:
-    - { resource: ../config.yml }
+    - { resource: sulu.yml }
     - { resource: security.yml }
+    - { resource: ../config.yml }
     - { resource: ../widgets.yml }
-
-framework:
-    router:
-        resource: "%kernel.root_dir%/config/admin/routing.yml"
-        strict_requirements: ~
-    session:
-        save_path: "%kernel.cache_dir%/../../sessions/admin/%kernel.environment%"
-
-# Twig Configuration
-twig:
-    debug:            %kernel.debug%
-    strict_variables: %kernel.debug%
 
 # Assetic Configuration
 assetic:
-    bundles:        [ ClientWebsiteBundle ]
+    bundles: [ ClientWebsiteBundle ]
 
 # Doctrine Configuration
 doctrine:
@@ -108,4 +97,3 @@ sulu_contact_extension:
             translation: contact.account.type.supplier
             tabs:
                 financials: true
-
